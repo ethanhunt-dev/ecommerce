@@ -93,23 +93,23 @@ $rules = [
     [
         'field' => 'name',
         'label' => 'Product Name',
-        'rules' => 'required|regex_match[/^[a-zA-Z0-9 ]+$/]'
+        'rules' => 'required|regex_match[/^[a-zA-Z0-9 ]+$/]|trim'
     ],
     [
         'field' => 'price',
         'label' => 'Product Price',
-        'rules' => 'required|numeric'
+        'rules' => 'required|numeric|trim'
     ],
     [
         'field' => 'sp',
         'label' => 'Selling Price',
-        'rules' => 'required|numeric'
+        'rules' => 'required|numeric|trim'
     ],
     
     [
         'field' => 'description',
         'label' => 'Description',
-        'rules' => 'required'
+        'rules' => 'required|trim'
     ]
 ];
 
