@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'user/products';
 $route['users/products'] = 'users/products/index';
 $route['users/products/(:num)'] = 'users/products/index/$1';
-
+$route['register'] ='registration/regis';
 // ADMIN ROUTES
 $route['admin'] = 'admin/product_controller';
 $route['admin/products'] = 'admin/product_controller/';
